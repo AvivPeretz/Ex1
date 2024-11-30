@@ -22,7 +22,7 @@ public class Ex1 {
             return;
         }
 
-        int numBase = 0;   // base input
+        int numBase=0;   // base input
 
         while (true){  //while loop which continues until the user type the required input.
             System.out.println("Enter a base for output: (a number [2,16])");
