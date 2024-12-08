@@ -50,7 +50,7 @@ public class Ex1 {
 
             numberPart = s.substring(0, bIndex); // Extract the number part
             try {
-                base = parseBase(s.substring(bIndex + 1)); // Parse the base
+                base = parseBase(s.substring(bIndex + 1));
             } catch (NumberFormatException e) {
                 return false; // Invalid base
             }
@@ -103,7 +103,7 @@ public class Ex1 {
         if (basePart.matches("[A-G]")) {
             return 10 + (basePart.charAt(0) - 'A');
         }
-        return Integer.parseInt(basePart); // Parse bases from 2 to 9
+        return Integer.parseInt(basePart);
     }
 
     private static String formatBase(int base) {

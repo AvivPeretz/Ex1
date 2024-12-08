@@ -7,12 +7,12 @@ public class Ex1Main {
         Scanner sc = new Scanner(System.in);
         String num1 = "", num2 = "", quit = "quit";
 
-        // לולאת הקלט ממשתמש עד שיכניס quit
+        // Input loop from user until "quit" is entered
         while (!num1.equals(quit) && !num2.equals(quit)) {
             System.out.println();
             System.out.println("Ex1 class solution:");
 
-            // קלט למספר הראשון עם בדיקה אם תקין
+            // Input for the first number with validation
             System.out.println("Enter a string as number#1 (or \"quit\" to end the program): ");
             int value1 = 0;
             while (true) {
@@ -34,7 +34,7 @@ public class Ex1Main {
                 }
             }
 
-            // קלט למספר השני עם בדיקה אם תקין
+            // Input for the second number with validation
             System.out.println("Enter a string as number#2 (or \"quit\" to end the program): ");
             int value2 = 0;
             while (true) {
@@ -57,22 +57,22 @@ public class Ex1Main {
                 }
             }
 
-            // קלט עבור הבסיס להמיר אליו
+            // Input for the base to convert to
             System.out.println("Enter a base for output: (a number [2,16])");
             int base = sc.nextInt();
-            sc.nextLine(); // Consume newline left by nextInt()
+            sc.nextLine();
             if (base < 2 || base > 16) {
                 System.out.println("Invalid base. Try again.");
                 continue;
             }
 
-            // חישוב סכום ומכפלה והמרה לבסיס המבוקש
+            // Calculate sum and product and convert to the requested base
             String sum = Ex1.int2Number(value1 + value2, base);
             String product = Ex1.int2Number(value1 * value2, base);
             System.out.println(num1 + " + " + num2 + " = " + sum);
             System.out.println(num1 + " * " + num2 + " = " + product);
 
-            // מציאת המספר הגדול ביותר במערך
+            // Find the largest number in the array
             String[] arr = {num1, num2, sum, product};
             int maxIdx = Ex1.maxIndex(arr);
             System.out.println("Max number over " + java.util.Arrays.toString(arr) + " is: " + arr[maxIdx]);
