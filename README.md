@@ -19,6 +19,6 @@ To execute the tests:
 
 ## How to Run:
 1. Compile the files.
-2. Open "out/artifacts/Ex1_jar" folder, then open "Ex1Sol.jar" file and click "View raw" to download the file.
+2. Open "out/artifacts/Ex1_jar" folder, then open "Ex1Sol.jar" file and click "View raw" to download the file(or go to "src->assignments/ex1->Ex1Sol.jar->view raw" adnd download the file).
 3. After downloading the Ex1Sol.jar file, open Terminal and run by typing the command: java -jar Ex1Sol.jar.
 4. Follow the instructions of the program and test it as much as you want.
